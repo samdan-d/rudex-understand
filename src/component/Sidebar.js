@@ -3,6 +3,7 @@ import User from '../containers/User.js';
 import './Sidebar.css';
 
 const SideBar = ({ contacts }) => {
+    
     return (
         <aside className="Sidebar">
             { contacts.map( contact => {

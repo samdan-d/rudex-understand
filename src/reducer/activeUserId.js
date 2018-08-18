@@ -1,3 +1,11 @@
-export default function activeUserId(state = null, active) {
-    return state;
+import { SET_ACTIVE_USER_ID } from '../constants/action-types.js';
+
+export default function activeUserId(state = null, action) {
+    switch (action.type) {
+        case SET_ACTIVE_USER_ID:
+            return action.payload;
+        
+        default: 
+            return state;
+    }
 };

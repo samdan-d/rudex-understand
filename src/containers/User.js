@@ -18,7 +18,6 @@ const User = ({ user }) => {
 }
 
 function handleUserClock({ user_id }) {
-    console.log(user_id);
     store.dispatch(setActiveUserId(user_id));
 }
 
